@@ -1,0 +1,123 @@
+.hero {
+  position: relative;
+  background-image: url('your-hero-image.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 500px; /* Adjust the height as needed */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero {
+  position: relative;
+  height: 500px; /* Adjust the height as needed */
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+/* product details */
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-heading h2 {
+  font-size: 36px;
+  color: #333; /* Change the color as needed */
+}
+.product-card {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.product-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(18, 176, 127, 0.8); 
+  color: white;
+  padding: 10px 15px;
+  transform: translateY(100%);
+  transition: transform 0.3s;
+}
+
+.product-card:hover .product-details {
+  transform: translateY(0);
+}
+.sale-tag {
+  position: absolute;
+  top: 0;
+  background-color: #12B07F; 
+  color: white;
+  padding: 4px 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* sale counter */
+
+.sale-section {
+  background-color:rgb(39, 39, 39); /* Your theme color */
+  color: #fff; /* Text color */
+  padding: 60px 0;
+  text-align: center;
+}
+
+.countdown-timer {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.countdown-timer > div {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.countdown-timer span {
+  font-size: 36px;
+  font-weight: bold;
+}
+#countdown {
+ 
+  > div{
+      display: inline-block;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: 500;
+      background:#12B07F;
+      border-radius: 10px;
+  }
+}

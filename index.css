@@ -1,0 +1,251 @@
+ body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+ /* nav bar starts from here */
+ .navbar {
+  transition: background-color 0.3s;
+ 
+}
+.navbar-brand{
+  height: 100px;
+  width: 100px;
+}
+.navbar-brand img{
+  height: 100%;
+  width: 100%;
+}
+.navbar-icons .nav-item {
+  margin-right: 5px; 
+} 
+.navbar-nav .nav-link {
+  font-size: 20px; 
+  margin: 10px;
+  color: white;
+  font-weight: 500;
+  
+}
+.navbar-nav .nav-link:hover{
+  color: silver;
+  
+}
+.navbar-scrolled {
+  background-color: #12B07F; 
+  transition: background-color 0.3s;
+}
+.search-bar {
+  max-width: 0;
+  overflow: hidden;
+  transition: max-width 0.3s;
+}
+
+.search-bar.active {
+  max-width: 200px;
+}
+
+.search-bar input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-bottom: 1px solid white;
+}
+
+ 
+ /* slider starts from here */
+ .hero {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-inner {
+    position: relative;
+    max-width: 100%;
+    height: 80vh;
+  }
+  
+  .carousel-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  } 
+
+
+  .carousel-control-prev-icon{
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    transition: transform .2s;
+  }
+  .carousel-control-next-icon {
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    transition: transform .2s;
+    
+  }
+  
+  .carousel-control-prev{
+    width: auto;
+    opacity: 0.5;
+  }
+  .carousel-control-next {
+    width: auto;
+    opacity: 0.5;
+    
+  }
+  
+  .carousel-control-prev:hover{
+    transform: scale(1.5);
+  } .carousel-control-prev-icon{
+    transform: scale(1.5);
+  }
+  .carousel-control-next:hover{
+    transform: scale(1.5);
+  } .carousel-control-next-icon {
+    transform: scale(1.5);
+   
+  }
+  
+  /* Product cards */
+  .center-content {
+    text-align: center;
+  }
+
+  .heading {
+    margin-bottom: 20px;
+  }
+
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 4px 8px rgba(12, 153, 111, 0.5); 
+    transition: transform 0.3s ease; 
+  }
+
+  .card-img-top {
+    height: 300px; 
+    object-fit: cover;
+    width: 100%;
+  }
+  .card-body {
+    flex-grow: 2;
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .btn-primary {
+    background-color: gray;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background-color: #0d8f65;
+  }
+  
+  
+  .card-title{
+    color: #12B07F;
+  }
+  .btn-primary {
+    color: black;
+  }
+  
+  .about {
+    background-size: cover;
+    background-position: center;
+    padding: 4rem; 
+  }
+  
+  .about_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+  }
+  
+  .about_logo img {
+    max-height: 100%;
+    width: auto;
+  }
+
+  .testimonial {
+    text-align: center;
+  }
+  .testimonial-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+  }
+  .testimonial-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .testimonial-author {
+    font-weight: bold;
+  }
+
+
+
+
+/* footer */
+.footer {
+  background-color:black;
+  color: #fff;
+  padding: 40px 0;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+.footer-links li {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-links a:hover {
+  color: #12B07F;
+}
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: #12B07F;
+}

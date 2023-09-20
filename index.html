@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pascal Jewellery</title>
+  <link rel="icon" type="image" href="/Assets/logo/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <script src="index.js"></script>
+</head>
+
+<body>
+
+  <!-- navbar starts from here -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/Assets/logo/logo.png" alt="Logo" width="70">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="subCategoryDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Sub-Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="subCategoryDropdown">
+              <li><a class="dropdown-item" href="original.html">Original</a></li>
+              <li><a class="dropdown-item" href="artificial.html">Artificial</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <div class="navbar-icons">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" id="search-icon" href="#">
+                <i class="fa-solid fa-magnifying-glass fa-flip"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <div class="search-bar" id="search-bar">
+                <input type="text" id="search-input" placeholder="Search..." class="collapsed">
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">
+                <i class="fas fa-user"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">
+                <i class="fas fa-cart-shopping"></i>
+              </a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ended here -->
+
+
+  <!-- silder section starts from here -->
+  <section class="hero">
+    <div id="jewelrySlider" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item">
+          <img src="/Assets/slider/banner-image-1.jpg" class="d-block w-100" alt="Jewelry 1">
+          <div class="carousel-caption text-start">
+            <h1 style="font-size: 60px;">Discover a World of Jewellery</h1>
+           
+          </div>
+        </div>
+
+        <div class="carousel-item active">
+          <img src="/Assets/slider/7.jpg" class="d-block w-100" alt="Jewelry 2">
+          <div class="carousel-caption text-start">
+            <h1 style="font-size: 60px;">The Beauty of Pearls</h1>
+           
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <img src="/Assets/slider/jewellery-product-2.jpg" class="d-block w-100" alt="Jewelry 3">
+          <div class="carousel-caption text-end">
+            <h1 style="font-size: 60px;">Get the Authentic Look</h1>
+           
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#jewelrySlider" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden cursor-pointer">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#jewelrySlider" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden ">Next</span>
+      </a>
+    </div>
+  </section>
+  <!-- slider section ended here -->
+
+  <!-- producrt cards starting from here -->
+  <div class="container-fluid mt-5">
+    <div class="container center-content">
+      <div class="row">
+        <div class="heading mb-2">
+          <h1>Explore Our New Necklace Design</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/Assets/model/9.jpg" class="card-img-top" alt="Jewelry Item 1">
+            <div class="card-body">
+              <h5 class="card-title">Elegant Necklace</h5>
+              <p class="card-text">$299.99</p>
+              <a href="details.html" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/Assets/model/7.jpg" class="card-img-top" alt="Jewelry Item 2">
+            <div class="card-body">
+              <h5 class="card-title">Elegant Necklace</h5>
+              <p class="card-text">$299.99</p>
+              <a href="details.html" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/Assets/model/8.jpg" class="card-img-top" alt="Jewelry Item 3">
+            <div class="card-body">
+              <h5 class="card-title">Elegant Necklace</h5>
+              <p class="card-text">$299.99</p>
+              <a href="details.html" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/Assets/model/11.jpg" class="card-img-top" alt="Jewelry Item 4">
+            <div class="card-body">
+              <h5 class="card-title">Elegant Necklace</h5>
+              <p class="card-text">$299.99</p>
+              <a href="details.html" class="btn btn-primary">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- product cards ended here -->
+
+
+
+  <!-- trending section starts from here -->
+  <div class="container-fluid">
+    <div class="container center-content">
+      <div class="row">
+        <div class="heading mt-5">
+          <h1>Try Our Trending Products </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col">
+      <div class="card">
+        <img src="/Assets/trending/fashionable ring.jpg" class="card-img-top" alt="Trending Item 1">
+        <div class="card-body">
+          <h5 class="card-title">Fashionable <br> Ring</h5>
+          <p class="card-text">$199.99</p>
+          <a href="cart.html" class="btn btn-primary">Add To Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <img src="Assets/trending/gold-diamond-pendant.jpg" class="card-img-top" alt="Trending Item 2">
+        <div class="card-body">
+          <h5 class="card-title">Demanding <br> Pendant</h5>
+          <p class="card-text">$249.99</p>
+          <a href="cart.html" class="btn btn-primary">Add To Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <img src="Assets/trending/trendy neckles.jpg" class="card-img-top" alt="Trending Item 2">
+        <div class="card-body">
+          <h5 class="card-title">Trendy <br> Necklace</h5>
+          <p class="card-text">$249.99</p>
+          <a href="cart.html" class="btn btn-primary">Add To Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- trending section ended here -->
+
+  <!-- about pascal jewellers starts from here -->
+  <div class="container-fluid mt-5 border p-4">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="image-div ">
+          <img src="/Assets/model/11.jpg" style="height: 600px;" class="img-fluid" alt="Necklace">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="info-div">
+          <h2 style="font-size: 40px;">Elegant Necklace with Diamonds and Rare Green Stones</h2>
+          <p style="font-size: 20px;">Adorn yourself with the timeless elegance of our exquisite necklace. This masterpiece is meticulously
+            crafted with attention to detail, featuring a stunning pendant adorned with a breathtaking arrangement of
+            diamonds and rare green stones.</p>
+          <p style="font-size: 20px;">The diamonds, known for their brilliance and sparkle, are carefully selected to complement the necklace's
+            design, while the rare green stones add a touch of uniqueness and luxury. The interplay of light and color
+            creates a captivating display that will leave a lasting impression.</p>
+          <p style="font-size: 20px;">Whether you're attending a special event or looking to enhance your everyday look, our elegant necklace is
+            the perfect choice. Make a statement and stand out with the beauty of this masterpiece that combines the
+            brilliance of diamonds with the allure of rare green stones.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about pascal jewellers ended here -->
+
+  <!-- brands jewellery starts from here -->
+  <div class="container-fluid mt-5">
+    <div class="container ">
+        <div class="row">
+          <h3 style="font-size: 40px;">The Brands Collabrate With Pascal Jewellery</h3>
+            <div class="col-md-3 mt-5">
+                <img src="/Assets/brands/monicavinader/logo.avif" class="logo" alt="IVY ROSE Logo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="/Assets/brands/monicavinader/1.webp" class="card-img-top" alt="Jewelry Item 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Slim Gold Necklace</h5>
+                        <p class="card-text">$299.99</p>
+                        <a href="details.html" class="btn btn-primary">View Details</a>
+                        <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/Assets/brands/monicavinader/2.webp" class="card-img-top" alt="Jewelry Item 2">
+            <div class="card-body">
+              <h5 class="card-title">G&D Necklace</h5>
+              <p class="card-text">$499.99</p>
+              <a href="details.html" class="btn btn-primary">View Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/Assets/brands/monicavinader/3.webp" class="card-img-top" alt="Jewelry Item 3">
+            <div class="card-body">
+              <h5 class="card-title">Elegant Necklace</h5>
+              <p class="card-text">$599.99</p>
+              <a href="details.html" class="btn btn-primary">View Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/Assets/brands/monicavinader/4.webp" class="card-img-top" alt="Jewelry Item 4">
+            <div class="card-body">
+              <h5 class="card-title">Diamond Necklace</h5>
+              <p class="card-text">$249.99</p>
+              <a href="details.html" class="btn btn-primary">View Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-end mt-2">
+          <a href="ivy.html" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="container-fluid mt-5">
+    <div class="container center-content">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="/Assets/brands/sarena/Serena-Logo.avif" class="logo mt-3" alt="IVY ROSE Logo">
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/Assets/brands/sarena/22.webp" class="card-img-top" alt="Jewelry Item 1">
+            <div class="card-body">
+              <h5 class="card-title">Diamond Earrings</h5>
+              <p class="card-text">$499.99</p>
+              <a href="details.html" class="btn btn-primary">View Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/Assets/brands/sarena/1.avif" class="card-img-top" alt="Jewelry Item 2">
+            <div class="card-body">
+              <h5 class="card-title">Necklace with Locket</h5>
+              <p class="card-text">$259.99</p>
+              <a href="details.html" class="btn btn-primary">View Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/Assets/brands/sarena/2.avif" class="card-img-top" alt="Jewelry Item 3">
+            <div class="card-body">
+              <h5 class="card-title">Artificial Ring</h5>
+              <p class="card-text">$99.99</p>
+              <a href="details.html" class="btn btn-primary">View Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/Assets/brands/sarena/2.jpg" class="card-img-top" alt="Jewelry Item 4">
+            <div class="card-body">
+              <h5 class="card-title">Diamond Bracelet</h5>
+              <p class="card-text">$299.99</p>
+              <a href="details.html" class="btn btn-primary">View Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-end mt-2">
+          <a href="sarena.html" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+   <div class="container-fluid mt-5">
+    <div class="container center-content">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="/Assets/brands/noorenlondon/logo.avif" class="logo" alt="IVY ROSE Logo">
+      </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/Assets/brands/noorenlondon/1.webp" class="card-img-top" alt="Jewelry Item 1">
+            <div class="card-body">
+              <h5 class="card-title">Diamond Necklace</h5>
+              <p class="card-text">$699.99</p>
+              <a href="details.html" class="btn btn-primary">View Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/Assets/brands/noorenlondon/2.webp" class="card-img-top" alt="Jewelry Item 2">
+            <div class="card-body">
+              <h5 class="card-title">Ring</h5>
+              <p class="card-text">$299.99</p>
+              <a href="details.html" class="btn btn-primary">View Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/Assets/brands/noorenlondon/3.webp" class="card-img-top" alt="Jewelry Item 3">
+            <div class="card-body">
+              <h5 class="card-title">Gold Earring</h5>
+              <p class="card-text">$399.99</p>
+              <a href="details.html" class="btn btn-primary">View Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="/Assets/brands/sarena/1.avif" class="card-img-top" alt="Jewelry Item 4">
+            <div class="card-body">
+              <h5 class="card-title">Necklace with Locket</h5>
+              <p class="card-text">$299.99</p>
+              <a href="details.html" class="btn btn-primary">View Details</a>
+              <a href="cart.html" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-end mt-2">
+        <a href="nooren.html" class="btn btn-primary">View More</a>
+      </div>
+    </div>
+    
+    
+  </div>
+    
+  </div>
+
+  
+
+
+  
+  <!-- testimonil of pascal jewellers strats  here -->
+  <section class="testimonial-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">What Our Customers Say</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-4">
+          <div class="testimonial">
+            <img src="/Assets/testimonial/4.jpeg" class="testimonial-img img-fluid" alt="Emily Johnson">
+            <p class="testimonial-text">"The jewelry collection is absolutely stunning. The craftsmanship and attention
+              to detail are remarkable. I'm thrilled with my purchase."</p>
+            <p class="testimonial-author">- Emily Johnson</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial">
+            <img src="/Assets/testimonial/2.jpg" class="testimonial-img img-fluid" alt="Michael Smith">
+            <p class="testimonial-text">"I've never seen such a beautiful range of jewelry. The quality is exceptional,
+              and the designs are unique. I'm a loyal customer now!"</p>
+            <p class="testimonial-author">- Michael Smith</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial">
+            <img src="/Assets/testimonial/1.jpg" class="testimonial-img img-fluid" alt="Sarah Williams">
+            <p class="testimonial-text">"The elegance and sophistication of the jewelry I received are beyond my
+              expectations. It adds a touch of luxury to any occasion."</p>
+            <p class="testimonial-author">- Sarah Williams</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- testimonil of pascal jewellers ended  here -->
+
+
+  <!-- news letter starts here -->
+  <div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="bg-light p-4 rounded shadow-lg">
+          <h4 class="mb-3 text-center">Subscribe to Our Newsletter</h4>
+          <p class="text-muted">Be the first to know about our latest jewelry designs and exclusive offers.</p>
+          <form>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" aria-label="Email"
+                aria-describedby="subscribe-button">
+              <button class="btn btn-primary" type="submit" id="subscribe-button">Subscribe</button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- news letter ended here -->
+  <!-- footer starts from here -->
+  <footer class="footer mt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="/Assets/logo/logo.png" alt="Logo" class="img-fluid" style="max-height: 100px;">
+          <h3>About Us</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet nec augue ac lacinia.</p>
+          <div class="container text-left">
+            <div class="social-icons mt-5">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-square-x-twitter"></i></i></a>
+              <a href="#"><i class="fab fa-square-instagram"></i></a>
+              <a href="#"><i class="fab fa-square-snapchat"></i></a>
+              <a href="#"><i class="fab fa-square-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Categories</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Abc Street, Karachi, Sindh, Pakistan</p>
+          <p><i class="fas fa-envelope"></i> pascalsjewellery@gmail.com</p>
+          <p><i class="fas fa-phone"> </i> 021-11223344</p>
+        </div>
+        <div class="col-md-3">
+          <h3>Feedback Form</h3>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" pattern="[A-Za-z]+" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="1" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- footer ended here -->
+
+
+
+  </div>
+
+
+
+
+</body>
+
+</html>
